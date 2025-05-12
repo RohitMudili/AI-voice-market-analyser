@@ -58,9 +58,10 @@ A sophisticated voice-driven market analysis assistant that enables users to int
 ```bash
 git clone https://github.com/RohitMudili/AI-voice-market-analyser.git
 cd AI-voice-market-analyser
-```
+````
 
 ### 2. Set Up Virtual Environment
+
 ```bash
 # Create virtual environment
 python -m venv venv
@@ -73,12 +74,15 @@ source venv/bin/activate
 ```
 
 ### 3. Install Dependencies
+
 ```bash
 pip install -r requirements.txt
 ```
 
 ### 4. Configure Environment Variables
+
 Create a `.env` file in the project root with the following structure:
+
 ```env
 # Deepgram Configuration
 DEEPGRAM_API_KEY=your_deepgram_api_key
@@ -95,35 +99,50 @@ ALPHAVANTAGE_API_KEY=your_alphavantage_api_key
 ## 🚀 Usage
 
 ### Starting the Application
+
 1. Ensure your virtual environment is activated
 2. Start the Streamlit application:
+
 ```bash
 streamlit run app.py
 ```
+
 3. Access the application at `http://localhost:8501`
 
 ### Using the Application
+
 1. **Prepare Your Voice Query**
-   - Record your voice query in WAV format
-   - Keep queries clear and concise
-   - Recommended duration: 5-30 seconds
 
-2. **Upload and Process**
-   - Click the upload button
-   - Select your WAV file
-   - Wait for processing
+   * Record your voice query in **WAV format**.
+   * Keep queries clear and concise.
+   * Recommended duration: 5-30 seconds.
 
-3. **View Results**
-   - Transcription will appear first
-   - AI response follows
-   - Audio playback starts automatically
+2. **Upload a WAV File of Your Choice**
+
+   * Click the upload button on the application interface.
+   * Select a **WAV file** from your local device that contains the voice query.
+   * The file will be uploaded and processed.
+
+3. **Upload and Process**
+
+   * After uploading, wait for the application to process the audio.
+   * The transcription of your query will appear first.
+   * Then, the AI-generated response will follow.
+
+4. **View Results**
+
+   * After processing, the transcription of your query will be shown.
+   * The AI’s response will appear below the transcription.
+   * **Audio playback** of the response will start automatically for a seamless experience.
 
 ### Example Queries
-- "What is the current price of AAPL stock?"
-- "Give me a market analysis for Tesla"
-- "What are the latest trends in the tech sector?"
+
+* "What is the current price of AAPL stock?"
+* "Give me a market analysis for Tesla"
+* "What are the latest trends in the tech sector?"
 
 ## 📁 Project Structure
+
 ```
 AI-voice-market-analyser/
 ├── app.py              # Main Streamlit application
@@ -136,46 +155,53 @@ AI-voice-market-analyser/
 ## 🔧 Troubleshooting
 
 ### Common Issues
+
 1. **API Key Errors**
-   - Verify all API keys are correctly set in `.env`
-   - Check API key validity in respective dashboards
-   - Ensure proper formatting of API keys
+
+   * Verify all API keys are correctly set in `.env`
+   * Check API key validity in respective dashboards
+   * Ensure proper formatting of API keys
 
 2. **Audio Processing Issues**
-   - Verify WAV file format
-   - Check file size (recommended < 10MB)
-   - Ensure clear audio quality
+
+   * Verify WAV file format
+   * Check file size (recommended < 10MB)
+   * Ensure clear audio quality
 
 3. **Connection Problems**
-   - Check internet connectivity
-   - Verify API service status
-   - Check firewall settings
+
+   * Check internet connectivity
+   * Verify API service status
+   * Check firewall settings
 
 ## 📝 API Usage Guidelines
 
 ### Deepgram
-- Free tier: 100 hours/month
-- Supports multiple languages
-- Real-time transcription
+
+* Free tier: 100 hours/month
+* Supports multiple languages
+* Real-time transcription
 
 ### OpenAI
-- GPT-3.5: Free tier available
-- TTS: Pay-as-you-go pricing
-- Rate limits apply
+
+* GPT-3.5: Free tier available
+* TTS: Pay-as-you-go pricing
+* Rate limits apply
 
 ### Alpha Vantage
-- Free tier: 5 API calls/minute
-- 500 API calls/day
-- Real-time and historical data
+
+* Free tier: 5 API calls/minute
+* 500 API calls/day
+* Real-time and historical data
 
 ## 🤝 Contributing
+
 Contributions are welcome! Please feel free to submit a Pull Request.
 
 ## 📄 License
+
 This project is licensed under the MIT License - see the LICENSE file for details.
 
 ## 📞 Support
-For support, please open an issue in the GitHub repository or contact the maintainers.
 
-## 🔄 Updates
-Regular updates and improvements are made to enhance functionality and user experience. 
+For support, please open an issue in the GitHub repository or contact the maintainers.
